@@ -1,0 +1,120 @@
+.ourgame-wrapper {
+  padding-top: 10rem;
+  margin-top: -25px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  @include screen(767) {
+    padding-top: 3rem;
+    margin-top: 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  &__item {
+    padding: 1rem;
+
+    div:nth-child(even) {
+      margin-top: 60px;
+    }
+  }
+
+  &__pc {
+    display: flex;
+
+    @include screen(767) {
+      display: none;
+    }
+
+    .title {
+      font-family: "Playfair Display";
+      font-size: 60px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 60px;
+      /* 100% */
+      letter-spacing: 3.6px;
+      margin-bottom: 20px;
+      color: #000;
+    }
+
+    .description {
+      font-size: 14px;
+      margin-top: 30px;
+      color: #757575;
+    }
+  }
+
+  &__mobile {
+    display: none;
+
+    @include screen(767) {
+      display: block;
+    }
+
+    .title {
+      @include screen(767) {
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 31px;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #000;
+      }
+    }
+
+    .description {
+      @include screen(767) {
+        line-height: 32px;
+        color: #757575;
+      }
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0 80px;
+    gap: 40px;
+    margin-top: 3rem;
+    &--item {
+      &:nth-child(2n) {
+        padding-top: 80px;
+        @include screen(767) {
+          padding-top: 0;
+        }
+      }
+      &:nth-child(2n) {
+        @include screen(767) {
+          padding-top: 25px;
+        }
+      }
+      &:nth-child(2n + 1) {
+        @include screen(767) {
+          padding-bottom: 25px;
+        }
+      }
+    }
+    @include screen(767) {
+      padding: 0 16px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 15px;
+      row-gap: 0;
+    }
+  }
+
+  .ourgame {
+    margin-bottom: 4rem;
+
+    @include screen(767) {
+      // width: 200px;
+    }
+
+    &__info {
+      position: relative;
+      text-align: center;
+      color: #fff;
+    }
+  }
+}

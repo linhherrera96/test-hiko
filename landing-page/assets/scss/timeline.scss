@@ -1,0 +1,174 @@
+.timeline {
+  @include screen(767) {
+    background-position: -14% 48%;
+    background-size: 41%;
+  }
+  &-banner {
+    position: relative;
+    @include screen(767) {
+      position: unset;
+    }
+    .title {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      top: 55%;
+      font-weight: 900;
+      font-size: 80px;
+      line-height: 40px;
+      text-align: center;
+      letter-spacing: 0.6px;
+      mix-blend-mode: normal;
+      background: linear-gradient(180deg, #fff, #ffecbc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      @include screen(767) {
+        width: calc(100vw - 5px);
+        top: 43%;
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 42px;
+        letter-spacing: 5px;
+      }
+
+      .title-countdown {
+        font-family: "Playfair Display";
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 120px; /* 150% */
+        letter-spacing: 0.6px;
+        @include screen(767) {
+          font-size: 40px;
+          line-height: 50px; /* 125% */
+          letter-spacing: 0.6px;
+          margin-bottom: 38px;
+          padding: 7px;
+        }
+      }
+
+      .countdown {
+        padding-left: 5rem;
+        padding-right: 5rem;
+        margin-top: 25px;
+        @include screen(767) {
+          padding: 0 16px;
+        }
+        .time {
+          background: white;
+          -webkit-text-fill-color: black;
+          border-radius: 21px;
+          align-items: center;
+          @include screen(767) {
+            margin-top: 38px;
+          }
+        }
+
+        .block {
+          display: flex;
+          flex-direction: column;
+          margin: 20px;
+          @include screen(767) {
+            width: calc(100vw - 5px);
+            margin: 0px;
+          }
+        }
+
+        .text {
+          font-size: 16px;
+          font-family: "Montserrat";
+          font-weight: 700;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          text-align: center;
+          color: #15161e;
+          @include screen(767) {
+            font-size: 12px;
+            letter-spacing: 0.6px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+          }
+        }
+
+        .digit {
+          font-size: 60px;
+          font-weight: 900;
+          font-family: "Playfair Display";
+          text-align: center;
+          color: #15161e;
+          @include screen(767) {
+            font-size: 36px;
+            margin: 4px;
+          }
+        }
+      }
+
+      .introduction {
+        margin-top: 97px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 20px !important;
+        padding: 0px 200px;
+        @include screen(767) {
+          margin-top: 0px;
+          font-size: 12px;
+          padding: 0;
+        }
+        &__text {
+          letter-spacing: 0px;
+          font-weight: 700;
+          @include screen(767) {
+            margin-top: 40px;
+          }
+        }
+
+        .input-search {
+          margin-top: 32px;
+          -webkit-text-fill-color: #545454;
+          border-radius: 5px;
+          height: 45px;
+          @include screen(767) {
+            margin-top: 16px;
+            margin-left: 10px;
+            margin-right: 10px;
+          }
+        }
+
+        .input-icon {
+          top: 73%;
+          right: 15px;
+          transform: translateY(-50%);
+          position: absolute;
+          z-index: 999;
+        }
+      }
+    }
+    .img-fluid {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .background-banner {
+      width: 100%;
+      object-fit: cover;
+      @include screen(767) {
+        display: none;
+      }
+    }
+
+    .background-banner-mobile {
+      display: none;
+      width: 100%;
+      object-fit: cover;
+      @include screen(767) {
+        display: block;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .container {
+    max-width: 1344px !important;
+  }
+}

@@ -1,0 +1,206 @@
+.about-us-wrapper {
+  .about-us-content {
+    justify-content: center;
+    &__title {
+      font-family: "Playfair Display";
+      color: #000;
+      font-size: 60px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 60px; /* 100% */
+      letter-spacing: 3.6px;
+      @include screen(767) {
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 90px;
+      }
+    }
+
+    &__left {
+      display: grid;
+      margin-top: 1rem;
+    }
+
+    &__right {
+      background: #eeeeee;
+      margin-top: 2rem;
+
+      img {
+        position: absolute;
+      }
+      .about-image {
+        z-index: 999;
+        left: 27px;
+        top: 13px;
+      }
+
+      .about-us {
+        font-weight: 700;
+        font-size: 24px;
+        color: #000;
+        line-height: 60px;
+        @include screen(767) {
+          font-size: 24px;
+        }
+      }
+    }
+
+    &__around {
+      @include screen(767) {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &__user {
+      margin-top: 80px;
+      font-weight: 700;
+      @include screen(767) {
+        margin-top: 40px;
+        font-size: 24px;
+        margin-right: 30px;
+      }
+      .number {
+        color: var(--blue-b-500, #079bee);
+        font-size: 80px;
+        @include screen(767) {
+          font-size: 40px;
+        }
+      }
+
+      .number-text {
+        color: var(--blue-b-500, #079bee);
+        font-size: 40px;
+        display: flex;
+        margin-top: 10px;
+        align-items: end;
+        @include screen(767) {
+          font-size: 24px;
+        }
+      }
+
+      .text {
+        font-size: 24px;
+      }
+    }
+
+    &__game {
+      margin-top: 40px;
+      font-weight: 700;
+      @include screen(767) {
+        font-size: 24px;
+      }
+      .number {
+        font-size: 80px;
+        color: var(--blue-b-500, #079bee);
+        @include screen(767) {
+          font-size: 40px;
+        }
+      }
+
+      .number-text {
+        display: flex;
+        align-items: end;
+        color: var(--blue-b-500, #079bee);
+        margin-top: 10px;
+        font-size: 40px;
+        @include screen(767) {
+          font-size: 24px;
+        }
+      }
+
+      .text {
+        font-size: 24px;
+      }
+    }
+
+    &__description {
+      margin-top: 40px;
+      color: #757575;
+      font-size: 14px;
+      @include screen(767) {
+        margin-top: 0px;
+      }
+    }
+  }
+
+  @include screen(767) {
+    .about-us-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      &__left {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+
+.about-introduction {
+  margin-top: 5rem;
+  img {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    @keyframes fly {
+      0% {
+        transform: translate(-200%, 110vh) rotateZ(0deg);
+        opacity: 1;
+      }
+
+      12.5% {
+        transform: translate(120vw, -120%) rotateZ(20deg);
+      }
+
+      25% {
+        transform: translate(-200%, 50vh) scale(1.75) rotateZ(-20deg);
+      }
+
+      37.5% {
+        transform: translate(-200%, -120%) rotateZ(-40deg);
+        opacity: 0.5;
+      }
+
+      50% {
+        transform: translate(100vw, 50vh) rotateZ(0deg);
+      }
+
+      62.5% {
+        transform: translate(20vw, 100vh) rotateZ(20deg);
+      }
+      75% {
+        transform: translate(200%, 100vh) rotateZ(20deg);
+        opacity: 0.25;
+      }
+      87.5% {
+        transform: translate(50vw, -200%) scale(1.75) rotateZ(20deg);
+      }
+
+      100% {
+        transform: translate(-200%, 110vh) rotateZ(0deg);
+        opacity: 1;
+      }
+    }
+    img {
+      animation: fly 25s linear infinite;
+      top: 0;
+      left: 0;
+      position: relative;
+      z-index: 999;
+      pointer-events: none;
+    }
+  }
+
+  .map-image {
+    margin-top: -98px;
+    @include screen(767) {
+      margin-top: -33px;
+    }
+  }
+}

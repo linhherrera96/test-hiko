@@ -1,0 +1,135 @@
+.footer {
+  background: url("@/assets/images/footer.png");
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+  border-top: 0.5px solid #424657;
+  background-size: cover;
+  position: unset;
+  @include screen(767) {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0 0;
+  }
+
+  .logo {
+    padding-left: 10rem;
+    @include screen(767) {
+      padding-left: 0;
+      text-align: center;
+    }
+  }
+
+  .linked {
+    margin-top: 20px;
+  }
+
+  .input-icon {
+    top: 63%;
+    right: 10px;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: 999;
+    -webkit-text-fill-color: #ffffff;
+  }
+
+  .input-search {
+    background: unset;
+    -webkit-text-fill-color: #ffffff;
+    border-radius: 5px;
+    height: 45px;
+  }
+}
+
+.footer-copyright {
+  width: 100%;
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+  font-weight: 400;
+  padding: 1rem 0;
+  background: url("@/assets/images/copyright.png");
+  @include screen(767) {
+    font-size: 12px;
+    line-height: 28px;
+    color: #fff;
+    opacity: 0.7;
+    border-top: 0.5px solid #424657;
+    padding: 1rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.title {
+  color: #fdfdfd;
+  font-size: 33px;
+  line-height: 21px;
+  @include screen(767) {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 25px;
+  }
+}
+
+.info {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.text-title {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 56px;
+  @include screen(767) {
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 31px;
+  }
+}
+
+.info-content {
+  color: #e6e6e6;
+  max-width: 100%;
+  display: inline-flex;
+  @include screen(767) {
+    max-width: 100%;
+  }
+}
+
+.text-description {
+  font-size: 18px;
+  line-height: 40px;
+  @include screen(767) {
+    font-size: 16px;
+    line-height: 32px;
+  }
+}
+
+.sub-title {
+  color: #ff3232;
+}
+
+.text-subtitle {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 10px;
+
+  @include screen(767) {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 5px;
+  }
+}
+
+.description {
+  font-size: 14px;
+  color: #fff;
+  @include screen(767) {
+    font-size: 16px;
+    line-height: 30px;
+    color: #fff;
+  }
+}
