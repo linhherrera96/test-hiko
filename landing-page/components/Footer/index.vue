@@ -11,7 +11,7 @@
           <img src="@/assets/images/ins.svg" alt="" class="footer-logo" />
         </div>
       </b-col>
-      <b-col class="info" md="4" sm="12">
+      <b-col class="address" md="4" sm="12">
         <div class="title">{{ $t("address") }}</div>
         <div class="mt-3 d-flex align-items-center">
           <img src="@/assets/images/location.png" alt="" class="icon" />
