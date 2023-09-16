@@ -3,11 +3,13 @@
     <b-container fluid>
       <div class="header-toppage">
         <b-navbar toggleable="lg" type="dark" class="d-flex">
-          <b-navbar-toggle
-            target="nav-collapse"
-            v-on:click="toggleMenu"
-          ></b-navbar-toggle>
-          <img src="@/assets/images/Logo.svg" alt="" class="logo" />
+          <div class="d-flex navbar-collapse">
+            <b-navbar-toggle
+              target="nav-collapse"
+              v-on:click="toggleMenu"
+            ></b-navbar-toggle>
+            <img src="@/assets/images/Logo.svg" alt="" class="logo" />
+          </div>
           <b-collapse class="nav-item justify-content-end text-white" is-nav>
             <b-navbar-nav class="px-4 mr-3">
               <b-nav-item href="#">{{ $t("toppage.about_us") }}</b-nav-item>
