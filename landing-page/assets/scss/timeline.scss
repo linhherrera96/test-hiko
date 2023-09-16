@@ -19,12 +19,11 @@
       text-align: center;
       letter-spacing: 0.6px;
       mix-blend-mode: normal;
-      background: linear-gradient(180deg, #fff, #ffecbc);
+      -webkit-text-fill-color: #fff;
       -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
       @include screen(767) {
         width: calc(100vw - 5px);
-        top: 43%;
+        top: 46%;
         font-weight: 800;
         font-size: 36px;
         line-height: 42px;

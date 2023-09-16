@@ -38,7 +38,11 @@
                     src="@/assets/images/calendar-tick.svg"
                     alt=""
                   />
-                  <img src="@/assets/images/Oval.svg" alt="" />
+                  <img
+                    class="about-circle"
+                    src="@/assets/images/Oval.svg"
+                    alt=""
+                  />
                 </div>
                 <div class="col-10">
                   <span class="about-us d-block">{{
@@ -54,7 +58,11 @@
                     src="@/assets/images/pen-tool-2.svg"
                     alt=""
                   />
-                  <img src="@/assets/images/Oval.svg" alt="" />
+                  <img
+                    class="about-circle"
+                    src="@/assets/images/Oval.svg"
+                    alt=""
+                  />
                 </div>
                 <div class="col-10">
                   <span class="about-us d-block">{{
@@ -70,7 +78,11 @@
                     src="@/assets/images/people.svg"
                     alt=""
                   />
-                  <img src="@/assets/images/Oval.svg" alt="" />
+                  <img
+                    class="about-circle"
+                    src="@/assets/images/Oval.svg"
+                    alt=""
+                  />
                 </div>
                 <div class="col-10">
                   <span class="about-us d-block">{{

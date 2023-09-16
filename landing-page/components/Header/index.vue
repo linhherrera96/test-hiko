@@ -58,7 +58,10 @@
                       </span>
                     </p>
                   </div>
-                  <div style="border: 1px solid #c4c4c4"></div>
+                  <div
+                    class="d-flex m-auto"
+                    style="border: 1px solid #c4c4c4; width: 170px"
+                  ></div>
                   <div class="ml-2 d-flex">
                     <img
                       v-if="$i18n.locale === 'en'"
@@ -121,7 +124,10 @@
                     </span>
                   </p>
                 </div>
-                <div style="border: 1px solid #c4c4c4"></div>
+                <div
+                  class="d-flex m-auto"
+                  style="border: 1px solid #c4c4c4; width: 170px"
+                ></div>
                 <div class="ml-2 d-flex">
                   <img
                     v-if="$i18n.locale === 'en'"

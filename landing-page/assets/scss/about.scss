@@ -28,10 +28,22 @@
       img {
         position: absolute;
       }
+
       .about-image {
         z-index: 999;
         left: 27px;
         top: 13px;
+        @include screen(767) {
+          left: 13px;
+          top: 29px;
+        }
+      }
+
+      .about-circle {
+        @include screen(767) {
+          left: 0px;
+          top: 17px;
+        }
       }
 
       .about-us {
