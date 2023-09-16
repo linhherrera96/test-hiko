@@ -33,7 +33,7 @@
           >
         </div>
       </b-col>
-      <b-col class="info" md="3" sm="12">
+      <b-col class="subscribe" md="3" sm="12">
         <div class="title">{{ $t("subscribe") }}</div>
         <div class="mt-3 d-flex align-items-center">
           <div class="d-block">
