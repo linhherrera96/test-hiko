@@ -38,17 +38,6 @@
           :image="item.image"
         ></Card>
       </div>
-      <!-- <div class="row w-full ourgame-wrapper__item">
-        <div v-for="(item, index) in listProduct" :key="index" class="col-3">
-          <div class="ourgame">
-            <Card
-              :name="item.name"
-              :description="item.description"
-              :image="item.image"
-            ></Card>
-          </div>
-        </div>
-      </div> -->
     </div>
   </div>
 </template>

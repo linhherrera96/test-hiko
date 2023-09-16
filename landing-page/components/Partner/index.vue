@@ -25,6 +25,9 @@
         alt=""
       />
     </a>
+    <a class="bottom-right" v-else
+      ><img src="@/assets/images/arrow-circle-up.png" alt="" />
+    </a>
   </div>
 </template>
 
